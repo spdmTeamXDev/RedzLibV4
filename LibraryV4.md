@@ -221,3 +221,14 @@ Window:AddMinimizeButton({
   }}
 })
 ```
+
+
+
+## TextBox
+```lua
+local TextBox = Menu:AddTextBox({"test", "test", "..",
+Callback = function()
+
+end
+})
+```
