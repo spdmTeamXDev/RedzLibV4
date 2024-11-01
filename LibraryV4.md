@@ -154,7 +154,7 @@ local Dropdown = Tab:AddDropdown({
   Name = "Dropdown",
   Options = {"1", "2", "3"}
   Default = {"2"}
-  MultSelect = false
+  MultSelect = false,
   Callback = function(Value)
     
   end
@@ -194,6 +194,16 @@ local Slider = Tab:AddSlider({
   end)
 ]]
 ```
+## TextBox
+```lua
+local TextBox = Tap:AddTextBox({"Title", "", " < input > ",
+Callback = function()
+
+end
+})
+```
+
+
 
 ## Extra
 Create a Discord Invite
@@ -224,11 +234,4 @@ Window:AddMinimizeButton({
 
 
 
-## TextBox
-```lua
-local TextBox = Menu:AddTextBox({"test", "test", "..",
-Callback = function()
 
-end
-})
-```
