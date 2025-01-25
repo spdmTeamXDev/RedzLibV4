@@ -57,9 +57,6 @@ local Notify = Library:MakeNotify({
   Time = 5
 })
 
---[[
-  Notify:Wait() -- Wait for the notification to end
-]]
 ```
 
 ## Dialog
