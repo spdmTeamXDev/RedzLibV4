@@ -1,12 +1,17 @@
 # redz Library V4
 ## Library loadstring
+### Old (not working):
 ```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV4/main/Source.lua"))()
 ```
-
-library functions
+### New:
 ```lua
-Library:SetTheme("Theme Name") -- https://raw.githubusercontent.com/REDzHUB/RedzLibV4/main/Themes.lua
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/hacked-prototype/RedzLibV4/main/Source.lua"))()
+```
+
+Library Functions
+```lua
+Library:SetTheme("Theme Name") -- https://raw.githubusercontent.com/hackedx-prototype/RedzLibV4/main/Themes.lua
 
 Library:SetTransparency(0.1) -- 0, 1
 
@@ -54,6 +59,30 @@ local Notify = Library:MakeNotify({
 
 --[[
   Notify:Wait() -- Wait for the notification to end
+]]
+```
+
+## Dialog
+Show a Dialog
+```lua
+Window.Dialog:Create({
+    Title = "Example Dialog",
+    Confirm = {
+        Text = "Yes",
+        Callback = function ()
+            print("Yes")
+        end
+    },
+    Cancel = {
+        Text = "No"
+        Callback = function ()
+            print("No")
+        end
+    }
+})
+
+--[[
+  Window.Dialog:Wait() -- Wait for the dialog to be closed
 ]]
 ```
 
@@ -196,7 +225,7 @@ local Slider = Tab:AddSlider({
 ```
 ## TextBox
 ```lua
-local TextBox = Tap:AddTextBox({"Title", "", " < input > ",
+local TextBox = Tab:AddTextBox({"Title", "", " < input > ",
 Callback = function()
 
 end
@@ -231,7 +260,6 @@ Window:AddMinimizeButton({
   }}
 })
 ```
-
 
 
 
