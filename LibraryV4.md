@@ -51,7 +51,7 @@ local Window = redzlib:MakeWindow({
 ## Notification
 Create a Notification
 ```lua
-local Notify = Library:MakeNotify({
+Library:MakeNotify({
   Title = "Notification",
   Text = "This is a Notification",
   Time = 5
